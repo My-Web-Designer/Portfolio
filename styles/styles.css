@@ -1,1 +1,57 @@
+/* Global */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+/* Navigation */
+
+/* Home */
+
+.home {
+  background-image: url(../assets/images/hero.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  display: table;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.home-wrapper {
+  background-color: rgba(158, 158, 158, 0.7);
+  display: table-cell;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.blockquote {
+  font-weight: 300;
+}
+
+.sticky-bottom {
+  bottom: 0;
+  left: 0;
+  padding-bottom: 1rem;
+  position: absolute;
+  right: 0;
+}
+
+/* Profile */
+
+.progress-bar {
+  background-color: #17a2b8;
+}
+
+/* Portfolio */
+
+/* Articles */
+
+/* Contact */
