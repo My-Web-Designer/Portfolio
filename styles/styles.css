@@ -18,16 +18,31 @@ html {
   height: 100%;
 }
 
+.profile-wrapper,
+.portfolio-wrapper,
+.article-wrapper {
+  padding-top: 4rem;
+}
+
 /* Navigation */
+
+.navbar-wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1020;
+}
 
 /* Home */
 
 .home {
+  background-attachment: fixed;
   background-image: url(../assets/images/hero.jpeg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
-  color: #fff;
+  background-size: cover;
+  color: #f5f5f5;
   display: table;
   height: 100vh;
   text-align: center;
@@ -35,7 +50,7 @@ html {
 }
 
 .home-wrapper {
-  background-color: rgba(158, 158, 158, 0.7);
+  background-color: rgba(19, 18, 18, 0.7);
   display: table-cell;
   height: 100vh;
   vertical-align: middle;
@@ -48,7 +63,7 @@ html {
 .sticky-bottom {
   bottom: 0;
   left: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 1.2rem;
   position: absolute;
   right: 0;
 }
@@ -83,6 +98,10 @@ html {
 }
 
 /* Portfolio */
+
+.portfolio {
+  background-color: #d3d4d9;
+}
 
 .img-tiles-wrapper {
   position: relative;
@@ -191,6 +210,10 @@ html {
 
 /* Articles */
 
+.articles {
+  background-color: #f5f5f5;
+}
+
 .read-button {
   position: absolute;
   bottom: 0;
@@ -217,27 +240,28 @@ html {
 /* Contact */
 
 .contact {
+  background-attachment: fixed;
   background-image: url(../assets/images/contact_bg.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
-  color: #fcf7ff;
+  background-size: cover;
+  color: #f5f5f5;
+  display: table;
+  height: 100vh;
+  position: relative;
   text-align: center;
   width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: table
 }
 
-.contact-overlay {
+.contact-wrapper {
   background-color: rgba(19, 18, 18, 0.7);
-  height: 100%;
+  display: table-cell;
+  height: 100vh;
+  vertical-align: middle;
 }
 
 .contact-intro {
-  width: 70%;
+  /* width: 70%; */
   margin-right: auto;
   margin-left: auto;
   padding-top: 8em;
@@ -270,4 +294,13 @@ html {
 
 .personal-contact {
   margin-top: 5em
+}
+
+.contact-sticky-footer {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-bottom: 2rem;
 }
