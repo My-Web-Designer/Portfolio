@@ -26,8 +26,8 @@
 
 <body>
   <!-- Navigation bar -->
-  <!--   <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: rgba(0,0,0,0.8)">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-wrapper navbar-dark">
+    <div class="container">
       <a class="navbar-brand" href="#">Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -54,11 +54,11 @@
         </ul>
       </div>
     </div>
-  </nav> -->
+  </nav>
 
   <!-- Home -->
   <section class="home" id="home">
-    <div class="container-fluid home-wrapper">
+    <div class="container home-wrapper">
       <!-- Profile Picture -->
       <div>
         <img src="assets/images/profile.png" class="rounded" alt="Profile picture">
@@ -74,15 +74,15 @@
         </p>
       </blockquote>
       <!-- Contact Information -->
-      <div class="container-fluid sticky-bottom">
+      <div class="container sticky-bottom d-none d-sm-block">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm-3 text-left">
             <i class="fas fa-phone-square"></i> +91 9032996624
           </div>
-          <div class="col-sm">
+          <div class="col-sm-6">
             <i class="fas fa-envelope-square"></i> manichandu.m@icloud.com
           </div>
-          <div class="col-sm">
+          <div class="col-sm-3 text-right">
             <button type="button" class="btn btn-secondary">
               <i class="fas fa-file-download"></i> Download Resume</button>
           </div>
@@ -92,139 +92,157 @@
   </section>
 
   <!-- Profile -->
-  <section class="container-fluid profile" id="profile">
-    <!-- Profile -->
-    <div>
-      <h2>PROFILE</h2>
-      <p class="text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis accumsan ante, eget tempus dolor sagittis et. Sed luctus
-        ipsum ut nunc ullamcorper consectetur. Nunc dolor leo, sodales vitae augue at, viverra rutrum ex. Donec id feugiat
-        orci, vitae tincidunt nisi. Mauris at elit vel lorem venenatis tempor quis eget lorem. Integer a ipsum vitae est
-        mollis rutrum. Morbi malesuada pharetra nibh vel rhoncus. Aliquam vel mattis felis. Nulla malesuada id felis sed
-        ultrices. Vestibulum tellus mi, elementum eu odio sed, dictum vestibulum mauris. Curabitur tempus enim viverra velit
-        lobortis pharetra. Aenean fringilla facilisis malesuada. Integer velit leo, laoreet vel libero eu, dapibus dapibus
-        nunc. Nulla erat ante, pulvinar id lobortis eget, suscipit at turpis.
-      </p>
-    </div>
-    <!-- Design Process -->
-    <div>
-      <h2>The Design Process</h2>
-      <div class="bg-light w-100" style="min-height: 420px">
+  <section class="profile" id="profile">
+    <div class="container profile-wrapper">
+      <!-- Profile -->
+      <div>
+        <h2>PROFILE</h2>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis accumsan ante, eget tempus dolor
+          sagittis
+          et. Sed luctus
+          ipsum ut nunc ullamcorper consectetur. Nunc dolor leo, sodales vitae augue at, viverra rutrum ex. Donec id
+          feugiat
+          orci, vitae tincidunt nisi. Mauris at elit vel lorem venenatis tempor quis eget lorem. Integer a ipsum vitae
+          est
+          mollis rutrum. Morbi malesuada pharetra nibh vel rhoncus. Aliquam vel mattis felis. Nulla malesuada id felis
+          sed
+          ultrices. Vestibulum tellus mi, elementum eu odio sed, dictum vestibulum mauris. Curabitur tempus enim
+          viverra
+          velit
+          lobortis pharetra. Aenean fringilla facilisis malesuada. Integer velit leo, laoreet vel libero eu, dapibus
+          dapibus
+          nunc. Nulla erat ante, pulvinar id lobortis eget, suscipit at turpis.
+        </p>
       </div>
-    </div>
-    <!-- Skillsets -->
-    <div>
-      <h2>Skillsets</h2>
-      <h4 class="pb-2" style="border-bottom: 1px gray dashed">Languages &amp; Frameworks</h4>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="pb-3">
-              <div class="pb-1">HTML</div>
-              <div class="progress" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+      <!-- Design Process -->
+      <div>
+        <h2>The Design Process</h2>
+        <div class="bg-light w-100" style="min-height: 420px">
+        </div>
+      </div>
+      <!-- Skillsets -->
+      <div>
+        <h2>Skillsets</h2>
+        <h4 class="pb-2" style="border-bottom: 1px gray dashed">Languages &amp; Frameworks</h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="pb-3">
+                <div class="pb-1">HTML</div>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="pb-1">CSS</div>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="pb-1">JavaScript</div>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="pb-1">JQuery</div>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
               </div>
             </div>
-            <div class="pb-3">
-              <div class="pb-1">CSS</div>
-              <div class="progress" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="col-md-5 offset-md-2">
+              <div class="pb-3">
+                <div class="pb-1">Bootstrap</div>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="pb-3">
-              <div class="pb-1">JavaScript</div>
-              <div class="progress" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="pb-3">
+                <div class="pb-1">Angular</div>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-            <div class="pb-3">
-              <div class="pb-1">JQuery</div>
-              <div class="progress" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="pb-3">
+                <div class="pb-1">Wireframing</div>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-5 offset-md-2">
-            <div class="pb-3">
-              <div class="pb-1">Bootstrap</div>
-              <div class="progress" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="pb-3">
-              <div class="pb-1">Angular</div>
-              <div class="progress" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="pb-3">
-              <div class="pb-1">Wireframing</div>
-              <div class="progress" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="pb-3">
-              <div class="pb-1">UX</div>
-              <div class="progress" style="height: 20px;">
-                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="pb-3">
+                <div class="pb-1">UX</div>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Tools -->
-    <div>
-      <h4 class="pb-2" style="border-bottom: 1px gray dashed">Tools</h4>
-      <div class="container-fluid text-center">
-        <div class="row">
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
-          </div>
-          <div class="col-4 col-sm-2 py-4">
-            <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
-            <div class="pt-2">GIT</div>
+      <!-- Tools -->
+      <div>
+        <h4 class="pb-2" style="border-bottom: 1px gray dashed">Tools</h4>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <img src="assets/images/icon.png" alt="icon" style="border-radius: 50%; border: 1px dashed #17a2b8">
+              <div class="pt-2">GIT</div>
+            </div>
           </div>
         </div>
       </div>
@@ -232,146 +250,165 @@
   </section>
 
   <!-- Portfolio -->
-  <section class="container-fluid" id="portfolio" style="min-height: 920px; background-color: #d3d4d9;">
-    <h1>Portfolio</h1>
-    <!-- Introduction of the page content -->
-    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus distinctio adipisci vel quo molestias
-      sunt. Obcaecati explicabo et voluptate unde dolorem. Tempora, assumenda! Minus rerum eius nisi velit inventore accusantium
-      autem necessitatibus delectus, suscipit quam nulla quaerat! Suscipit architecto quidem iste minima enim quasi obcaecati?
-      Saepe libero quia et velit sequi id enim harum nisi eum itaque accusantium quasi ipsam labore possimus, nobis qui quisquam
-      nihil alias doloribus nemo sed. Architecto dolores error blanditiis incidunt, ipsam esse sint ut laboriosam tempore
-      consequuntur ratione repellat, porro ipsa quis nobis inventore cum iste saepe fugit nemo ex provident? Ad reprehenderit
-      quam consequatur!</p>
-    <!-- tiles for the content as cards -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="img-tiles-wrapper">
-            <div class="tiles-banner">
-              <img src="assets/images/1.png" alt="portfolio image">
-              <div class="restrict-img"></div>
-            </div>
-            <div class="tiles-desc">
-              <h5>Lorem ipsum dolor sit amet consectetur</h5>
-              <button type="button" class="btn custom_primary-btn view-button">View</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="img-tiles-wrapper">
-            <div class="tiles-banner">
-              <img src="assets/images/2.png" alt="portfolio image">
-              <div class="restrict-img"></div>
-            </div>
-            <div class="tiles-desc">
-              <h5>Lorem ipsum dolor sit amet consectetur</h5>
-              <button type="button" class="btn custom_primary-btn view-button">View</button>
+  <section class="portfolio" id="portfolio">
+    <div class="container portfolio-wrapper">
+      <h1>Portfolio</h1>
+      <!-- Introduction of the page content -->
+      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus distinctio adipisci vel
+        quo
+        molestias sunt. Obcaecati
+        explicabo et voluptate unde dolorem. Tempora, assumenda! Minus rerum eius nisi velit inventore accusantium
+        autem
+        necessitatibus
+        delectus, suscipit quam nulla quaerat! Suscipit architecto quidem iste minima enim quasi obcaecati? Saepe
+        libero
+        quia
+        et velit sequi id enim harum nisi eum itaque accusantium quasi ipsam labore possimus, nobis qui quisquam nihil
+        alias
+        doloribus nemo sed. Architecto dolores error blanditiis incidunt, ipsam esse sint ut laboriosam tempore
+        consequuntur
+        ratione repellat, porro ipsa quis nobis inventore cum iste saepe fugit nemo ex provident? Ad reprehenderit quam
+        consequatur!</p>
+      <!-- tiles for the content as cards -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/1.png" alt="portfolio image">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                <button type="button" class="btn custom_primary-btn view-button">View</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="img-tiles-wrapper">
-            <div class="tiles-banner">
-              <img src="assets/images/3.png" alt="portfolio image" class="portrait">
-              <div class="restrict-img"></div>
-            </div>
-            <div class="tiles-desc">
-              <h5>Lorem ipsum dolor sit amet consectetur</h5>
-              <button type="button" class="btn custom_primary-btn view-button">View</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="img-tiles-wrapper">
-            <div class="tiles-banner">
-              <img src="assets/images/1.png" alt="portfolio image">
-              <div class="restrict-img"></div>
-            </div>
-            <div class="tiles-desc">
-              <h5>Lorem ipsum dolor sit amet consectetur</h5>
-              <button type="button" class="btn custom_primary-btn view-button">View</button>
+          <div class="col-sm-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/2.png" alt="portfolio image">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                <button type="button" class="btn custom_primary-btn view-button">View</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="img-tiles-wrapper">
-            <div class="tiles-banner">
-              <img src="assets/images/2.png" alt="portfolio image">
-              <div class="restrict-img"></div>
-            </div>
-            <div class="tiles-desc">
-              <h5>Lorem ipsum dolor sit amet consectetur</h5>
-              <button type="button" class="btn custom_primary-btn view-button">View</button>
+          <div class="col-sm-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/3.png" alt="portfolio image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                <button type="button" class="btn custom_primary-btn view-button">View</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="img-tiles-wrapper">
-            <div class="tiles-banner">
-              <img src="assets/images/3.png" alt="portfolio image" class="portrait">
-              <div class="restrict-img"></div>
+          <div class="col-sm-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/1.png" alt="portfolio image">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                <button type="button" class="btn custom_primary-btn view-button">View</button>
+              </div>
             </div>
-            <div class="tiles-desc">
-              <h5>Lorem ipsum dolor sit amet consectetur</h5>
-              <button type="button" class="btn custom_primary-btn view-button">View</button>
+          </div>
+          <div class="col-sm-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/2.png" alt="portfolio image">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                <button type="button" class="btn custom_primary-btn view-button">View</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/3.png" alt="portfolio image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                <button type="button" class="btn custom_primary-btn view-button">View</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
 
   <!-- Articles -->
-  <section class="container-fluid" id="articles" style="min-height: 920px; background-color: #f5f5f5;">
-    <h1>Articles</h1>
-    <!-- Introduction of the page content -->
-    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus distinctio adipisci vel quo molestias
-      sunt. Obcaecati explicabo et voluptate unde dolorem. Tempora, assumenda! Minus rerum eius nisi velit inventore accusantium
-      autem necessitatibus delectus, suscipit quam nulla quaerat! Suscipit architecto quidem iste minima enim quasi obcaecati?
-      Saepe libero quia et velit sequi id enim harum nisi eum itaque accusantium quasi ipsam labore possimus, nobis qui quisquam
-      nihil alias doloribus nemo sed. Architecto dolores error blanditiis incidunt, ipsam esse sint ut laboriosam tempore
-      consequuntur ratione repellat, porro ipsa quis nobis inventore cum iste saepe fugit nemo ex provident? Ad reprehenderit
-      quam consequatur!</p>
-    <!-- tiles for the content as cards  -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="img-tiles-wrapper">
-            <div class="tiles-banner">
-              <div class="article-title">Heading of the Article</div>
-              <img src="assets/images/1.png" alt="articles image" class="portrait">
-              <div class="restrict-img"></div>
-            </div>
-            <div class="tiles-desc">
-              <h5>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...</h5>
-              <button type="button" class="btn custom_primary-btn read-button">Read more</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="img-tiles-wrapper">
-            <div class="tiles-banner">
-              <div class="article-title">Heading of the Article</div>
-              <img src="assets/images/2.png" alt="articles image" class="portrait">
-              <div class="restrict-img"></div>
-            </div>
-            <div class="tiles-desc">
-              <h5>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...</h5>
-              <button type="button" class="btn custom_primary-btn read-button">Read more</button>
+  <section class="articles" id="articles">
+    <div class="container article-wrapper">
+      <h1>Articles</h1>
+      <!-- Introduction of the page content -->
+      <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus distinctio adipisci vel
+        quo
+        molestias sunt. Obcaecati
+        explicabo et voluptate unde dolorem. Tempora, assumenda! Minus rerum eius nisi velit inventore accusantium
+        autem
+        necessitatibus
+        delectus, suscipit quam nulla quaerat! Suscipit architecto quidem iste minima enim quasi obcaecati? Saepe
+        libero
+        quia
+        et velit sequi id enim harum nisi eum itaque accusantium quasi ipsam labore possimus, nobis qui quisquam nihil
+        alias
+        doloribus nemo sed. Architecto dolores error blanditiis incidunt, ipsam esse sint ut laboriosam tempore
+        consequuntur
+        ratione repellat, porro ipsa quis nobis inventore cum iste saepe fugit nemo ex provident? Ad reprehenderit quam
+        consequatur!</p>
+      <!-- tiles for the content as cards  -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <div class="article-title">Heading of the Article</div>
+                <img src="assets/images/1.png" alt="articles image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...</h5>
+                <button type="button" class="btn custom_primary-btn read-button">Read more</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="img-tiles-wrapper">
-            <div class="tiles-banner">
-              <div class="article-title">Heading of the Article</div>
-              <img src="assets/images/3.png" alt="articles image" class="portrait">
-              <div class="restrict-img"></div>
+          <div class="col-sm-6">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <div class="article-title">Heading of the Article</div>
+                <img src="assets/images/2.png" alt="articles image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...</h5>
+                <button type="button" class="btn custom_primary-btn read-button">Read more</button>
+              </div>
             </div>
-            <div class="tiles-desc">
-              <h5>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consecteturs...</h5>
-              <button type="button" class="btn custom_primary-btn read-button">Read more</button>
+          </div>
+          <div class="col-sm-6">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <div class="article-title">Heading of the Article</div>
+                <img src="assets/images/3.png" alt="articles image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consecteturs...</h5>
+                <button type="button" class="btn custom_primary-btn read-button">Read more</button>
+              </div>
             </div>
           </div>
         </div>
@@ -381,35 +418,41 @@
 
   <!-- Contact -->
   <section class="contact" id="contact">
-    <div class="container-fluid contact-overlay">
-      <div class="contact-intro">
-        <h2>I'd Love To Hear From You<br>Let's get in touch!</h2>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio dolor dolorum atque sequi architecto
-          cupiditate vero, reprehenderit illum beatae provident impedit qui aspernatur? Unde quia saepe ducimus vitae perspiciatis.s</h5>
+    <div class="container contact-wrapper">
+      <div class="pb-4">
+        <h3>I'd Love To Hear From You
+          <br> Let's get in touch !</h3>
       </div>
-      <div class="row personal-contact">
-        <div class="col-sm-6 text-left">
-          <h3><span class="icon-box"><i class="fas fa-phone fa-flip-horizontal"></i></span>+91 8888 999 000</h3>
-        </div>
-        <div class="col-sm-6 text-right">
-          <h3><span class="icon-box"><i class="fas fa-envelope"></i></span>mymailid@somemail.com</h3>
-        </div>
+      <div class="pt-5 col-sm-8 offset-sm-2">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore iusto soluta enim adipisci nemo vero
+          perferendis!
+          Velit unde, neque quam pariatur alias, fuga a, repellendus minima nemo rerum aspernatur! Quo.</h5>
       </div>
-      <div class="row social-contact">
-        <div class="col-sm-4 text-left">
-          <h4><a href="#"><i class="fab fa-linkedin-in"></i>&nbsp;&#x2F;&nbsp;linkedinacc</a></h4>
-        </div>
-        <div class="col-sm-4 text-center">
-          <h4><a href="#"><i class="fab fa-github-alt"></i>&nbsp;&#x2F;&nbsp;githubacc</a></h4>
-        </div>
-        <div class="col-sm-4 text-right">
-          <h4><a href="#"><i class="fab fa-facebook-f"></i>&nbsp;&#x2F;&nbsp;facebookacc</a></h4>
+      <div class="container d-none d-sm-block">
+        <div class="pt-5 row">
+          <div class="col col-sm- text-left">
+            <i class="fas fa-phone fa-flip-horizontal"></i>&nbsp;&nbsp;9032996624
+          </div>
+          <div class="col col-sm-6 text-right">
+            <i class="fas fa-envelope"></i>&nbsp;&nbsp;manichandu.m@icloud.com
+          </div>
         </div>
       </div>
-
+      <div class="container sticky-bottom d-none d-sm-block">
+        <div class="row">
+          <div class="col-sm text-left">
+            <i class="fab fa-linkedin-in"></i>&nbsp;&#x2F;&nbsp;ManiChandu
+          </div>
+          <div class="col-sm">
+            <i class="fab fa-github-alt"></i>&nbsp;&#x2F;&nbsp;ManiChanduM
+          </div>
+          <div class="col-sm text-right">
+            <i class="fab fa-facebook-f"></i>&nbsp;&#x2F;&nbsp;ManiChandu.M
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-
 
   <!-- Script.js -->
   <script src="scripts/script.js "></script>
