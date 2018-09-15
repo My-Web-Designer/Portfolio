@@ -11,8 +11,17 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
 
+  <link rel="stylesheet" href="styles/photoswipe.css">
+
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="assets/default-skin/default-skin.css">
+
   <!-- Global CSS  -->
   <link rel="stylesheet" href="styles/styles.css">
+
   <title>Portfolio</title>
 
   <!-- Fontawesome icons -->
@@ -280,7 +289,20 @@
               </div>
               <div class="tiles-desc">
                 <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                <button type="button" class="btn custom_primary-btn view-button">View</button>
+                <!-- <button type="button" class="btn custom_primary-btn view-button">View</button> -->
+
+              <span class="attachment-count"><img src="assets/images/attach.png" alt=""/>  3 Attachments</span>
+                <div class="picture">
+                  <figure>
+                    <a class="btn custom_primary-btn view-button" href="assets/images/1.png" data-size="1366x768"
+                      data-index="0">
+                      View
+                    </a>
+                  </figure>
+                  <figure class="d-none"><a href="assets/images/2.png" data-size="1366x768" data-index="1"></a></figure>
+                  
+                  <figure class="d-none"><a href="assets/images/3.png" data-size="1366x3532" data-index="1"></a></figure>
+                </div>
               </div>
             </div>
           </div>
@@ -292,7 +314,19 @@
               </div>
               <div class="tiles-desc">
                 <h5>Lorem ipsum dolor sit amet consectetur</h5>
-                <button type="button" class="btn custom_primary-btn view-button">View</button>
+                <!-- <button type="button" class="btn custom_primary-btn view-button">View</button> -->
+                <span class="attachment-count"><img src="assets/images/attach.png" alt=""/>  3 Attachments</span>
+                <div class="picture">
+                  <figure>
+                    <a class="btn custom_primary-btn view-button" href="assets/images/3.png" data-size="1366x3532"
+                      data-index="0">
+                      View
+                    </a>
+                  </figure>
+                  <figure class="d-none"><a href="assets/images/2.png" data-size="1366x768" data-index="1"></a></figure>
+                  
+                  <figure class="d-none"><a href="assets/images/1.png" data-size="1366x768" data-index="1"></a></figure>
+                </div>
               </div>
             </div>
           </div>
@@ -376,12 +410,35 @@
             <div class="img-tiles-wrapper">
               <div class="tiles-banner">
                 <div class="article-title">Heading of the Article</div>
-                <img src="assets/images/1.png" alt="articles image" class="portrait">
+                <img src="assets/images/1.png" alt="articles image">
                 <div class="restrict-img"></div>
               </div>
               <div class="tiles-desc">
                 <h5>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...</h5>
-                <button type="button" class="btn custom_primary-btn read-button">Read more</button>
+                <button type="button" class="btn custom_primary-btn read-button" data-toggle="modal" data-target="#article_modal"
+                  data-title="Title 1 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur..."
+                  data-src="assets/images/1.png" data-content="Content 1 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Content 1 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Content 1 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...">Read
+                  more</button>
               </div>
             </div>
           </div>
@@ -389,12 +446,35 @@
             <div class="img-tiles-wrapper">
               <div class="tiles-banner">
                 <div class="article-title">Heading of the Article</div>
-                <img src="assets/images/2.png" alt="articles image" class="portrait">
+                <img src="assets/images/2.png" alt="articles image">
                 <div class="restrict-img"></div>
               </div>
               <div class="tiles-desc">
                 <h5>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...</h5>
-                <button type="button" class="btn custom_primary-btn read-button">Read more</button>
+                <button type="button" class="btn custom_primary-btn read-button" data-toggle="modal" data-target="#article_modal"
+                  data-title="Title 2 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur..."
+                  data-src="assets/images/2.png" data-content="Content 2 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Content 1 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Content 1 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...">Read
+                  more</button>
               </div>
             </div>
           </div>
@@ -407,7 +487,30 @@
               </div>
               <div class="tiles-desc">
                 <h5>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consecteturs...</h5>
-                <button type="button" class="btn custom_primary-btn read-button">Read more</button>
+                <button type="button" class="btn custom_primary-btn read-button" data-toggle="modal" data-target="#article_modal"
+                  data-title="Title 3 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur..."
+                  data-src="assets/images/3.png" data-content="Content 3 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Content 1 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Content 1 Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...
+                  Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur...">Read
+                  more</button>
               </div>
             </div>
           </div>
@@ -454,8 +557,74 @@
     </div>
   </section>
 
-  <!-- Script.js -->
-  <script src="scripts/script.js "></script>
+  <!-- The Modal -->
+  <div class="modal fade" id="article_modal">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="article-cover">
+            <img src="" alt="articles image" class="landscape">
+            <div class="restrict-img"></div>
+          </div>
+          <p class="article-description"></p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn custom_primary-btn" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery, Popper.js and Bootstrap JS-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
@@ -464,6 +633,13 @@
     crossorigin="anonymous "></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
     crossorigin="anonymous "></script>
+  <!-- Core JS file -->
+  <script src="scripts/photoswipe.js"></script>
+
+  <!-- UI JS file -->
+  <script src="scripts/photoswipe-ui-default.js"></script>
+  <!-- Script.js -->
+  <script src="scripts/script.js "></script>
 </body>
 
 </html>

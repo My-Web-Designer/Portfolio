@@ -108,7 +108,7 @@ html {
 }
 
 .tiles-banner {
-  height: 300px;
+  height: 275px;
   width: 90%;
   border-radius: .9em;
   margin: 0 auto;
@@ -151,10 +151,10 @@ html {
   background: #fcf7ff;
   border: 1px solid #d3d4d9;
   padding: 1em;
-  height: 140px;
+  height: 160px;
   margin: 0 auto;
   position: relative;
-  top: -4em;
+  top: -5em;
   border-radius: .7em;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.17);
@@ -208,6 +208,13 @@ html {
   background-color: #efcb68;
 }
 
+.attachment-count{
+  font-size: .9em;
+}
+.attachment-count img{
+  width: 16px;
+  vertical-align: sub;
+}
 /* Articles */
 
 .articles {
@@ -303,4 +310,60 @@ html {
   right: 0;
   width: 100%;
   padding-bottom: 2rem;
+}
+
+/* Article Modal */
+
+.article-cover {
+  height: 300px;
+  background: #d3d4d9;
+  margin: .5rem 0 1.25rem;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #d3d4d9;
+}
+
+.article-cover img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.article-cover img.landscape {
+  width: 100%;
+  height: auto;
+  top: 0;
+  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+/* Photoswipe */
+
+a.btn:hover {
+  color: #fcf7ff;
+}
+
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before {
+  height: 45px;
+  width: 40px;
+}
+
+.pswp__button--arrow--left:before {
+  border-radius: 0 5px 5px 0;
+  background-position: -134px -37px;
+  left:0px;
+}
+.pswp__button--arrow--right:before {
+  border-radius: 5px 0 0 5px;
+  background-position: -90px -37px;
+  right:0px;
 }
