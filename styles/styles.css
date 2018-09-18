@@ -116,8 +116,8 @@ html {
 .icon-box {
   background: #ccc;
   border-radius: 3px;
-  width: 40px;
-  height: 36px;
+  width: 2rem;
+  height: 1.6rem;
   display: inline-block;
   text-align: center;
   color: #6d6f7d;
@@ -134,6 +134,10 @@ html {
 
 .icon-box i.fa-phone {
   font-size: .9em
+}
+
+.custom_primary-btn.download-btn {
+  color: black;
 }
 
 /* Profile */
@@ -325,9 +329,9 @@ html {
   margin-top: 3em;
 }
 
-.social-contact {
+/* .social-contact {
   margin-top: 7em;
-}
+} */
 
 .social-contact a,
 .social-contact a:hover,
@@ -338,16 +342,20 @@ html {
 }
 
 .social-contact i {
-  font-size: 1.4em;
-  vertical-align: baseline;
+  font-size: 1.8rem;
+  /*   vertical-align: baseline; */
 }
 
-.social-contact i.fa-github-alt {
+/* .social-contact i.fa-github-alt {
   vertical-align: sub;
-}
+} */
 
-.personal-contact {
-  margin-top: 5em
+.personal-contact a,
+.personal-contact a:hover,
+.personal-contact a:active,
+.personal-contact a:focus {
+  color: #fff;
+  text-decoration: none;
 }
 
 .contact-sticky-footer {

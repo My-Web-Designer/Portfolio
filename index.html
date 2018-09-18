@@ -16,7 +16,7 @@
 
   <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
      In the folder of skin CSS file there are also:
-     - .png and .svg icons sprite, 
+     - .png and .svg icons sprite,
      - preloader.gif (for browsers that do not support CSS animations) -->
   <link rel="stylesheet" href="assets/default-skin/default-skin.css">
 
@@ -39,13 +39,13 @@
   <nav class="navbar navbar-expand-lg navbar-wrapper navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">Portfolio</a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggler"
+        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <!-- <span class="navbar-toggler-icon"></span> -->
         <span class="icon-bar top-bar"></span>
-          <span class="icon-bar middle-bar"></span>
-          <span class="icon-bar bottom-bar"></span>
-          <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarToggler">
@@ -89,16 +89,33 @@
       </blockquote>
       <!-- Contact Information -->
       <div class="container sticky-bottom d-none d-sm-block">
-        <div class="row">
+        <div class="row personal-contact">
           <div class="col-sm-3 text-left">
-            <i class="fas fa-phone-square"></i> +91 9032996624
+            <h5><a href="tel:+919032996624"><span class="icon-box"><i class="fas fa-phone fa-flip-horizontal"></i>
+                </span>9032996624</a></h5>
           </div>
           <div class="col-sm-6">
-            <i class="fas fa-envelope-square"></i> manichandu.m@icloud.com
+            <h5><a href="mailto:manichandu.m@icloud.com" target="_top"><span class="icon-box"><i class="fas fa-envelope"></i>
+                </span>manichandu.m@icloud.com</a></h5>
           </div>
           <div class="col-sm-3 text-right">
-            <button type="button" class="btn btn-secondary">
-              <i class="fas fa-file-download"></i> Download Resume</button>
+            <button type="button" class="btn custom_primary-btn download-btn">Download Resume</button>
+          </div>
+        </div>
+      </div>
+      <!-- Only for xs devices Contact Information -->
+      <div class="container sticky-bottom d-block d-sm-none">
+        <div class="row personal-contact">
+          <div class="col text-left">
+            <h5><a href="tel:+919032996624"><span class="icon-box"><i class="fas fa-phone fa-flip-horizontal"></i>
+                </span></a></h5>
+          </div>
+          <div class="col">
+            <h5><a href="mailto:manichandu.m@icloud.com" target="_top"><span class="icon-box"><i class="fas fa-envelope"></i>
+                </span></a></h5>
+          </div>
+          <div class="col text-right">
+            <h5><a href="#"><span class="icon-box"><i class="fas fa-download"></i></span></a></h5>
           </div>
         </div>
       </div>
@@ -296,7 +313,7 @@
                 <h5>Lorem ipsum dolor sit amet consectetur</h5>
                 <!-- <button type="button" class="btn custom_primary-btn view-button">View</button> -->
 
-              <span class="attachment-count"><img src="assets/images/attach.png" alt=""/>  3 Attachments</span>
+                <span class="attachment-count"><img src="assets/images/attach.png" alt="" /> 3 Attachments</span>
                 <div class="picture">
                   <figure>
                     <a class="btn custom_primary-btn view-button" href="assets/images/1.png" data-size="1366x768"
@@ -305,7 +322,7 @@
                     </a>
                   </figure>
                   <figure class="d-none"><a href="assets/images/2.png" data-size="1366x768" data-index="1"></a></figure>
-                  
+
                   <figure class="d-none"><a href="assets/images/3.png" data-size="1366x3532" data-index="1"></a></figure>
                 </div>
               </div>
@@ -320,7 +337,7 @@
               <div class="tiles-desc">
                 <h5>Lorem ipsum dolor sit amet consectetur</h5>
                 <!-- <button type="button" class="btn custom_primary-btn view-button">View</button> -->
-                <span class="attachment-count"><img src="assets/images/attach.png" alt=""/>  3 Attachments</span>
+                <span class="attachment-count"><img src="assets/images/attach.png" alt="" /> 3 Attachments</span>
                 <div class="picture">
                   <figure>
                     <a class="btn custom_primary-btn view-button" href="assets/images/3.png" data-size="1366x3532"
@@ -329,7 +346,7 @@
                     </a>
                   </figure>
                   <figure class="d-none"><a href="assets/images/2.png" data-size="1366x768" data-index="1"></a></figure>
-                  
+
                   <figure class="d-none"><a href="assets/images/1.png" data-size="1366x768" data-index="1"></a></figure>
                 </div>
               </div>
@@ -537,25 +554,79 @@
           Velit unde, neque quam pariatur alias, fuga a, repellendus minima nemo rerum aspernatur! Quo.</h5>
       </div>
       <div class="container d-none d-sm-block">
-        <div class="pt-5 row">
-          <div class="col col-sm- text-left">
-            <i class="fas fa-phone fa-flip-horizontal"></i>&nbsp;&nbsp;9032996624
+        <div class="pt-5 row personal-contact">
+          <div class="col col-sm-6 text-left">
+            <h5><a href="tel:+919032996624">
+                <span class="icon-box">
+                  <i class="fas fa-phone fa-flip-horizontal"></i>
+                </span>9032996624
+              </a></h5>
           </div>
           <div class="col col-sm-6 text-right">
-            <i class="fas fa-envelope"></i>&nbsp;&nbsp;manichandu.m@icloud.com
+            <h5><a href="mailto:manichandu.m@icloud.com" target="_top">
+                <span class="icon-box">
+                  <i class="fas fa-envelope"></i>
+                </span>manichandu.m@icloud.com
+              </a></h5>
+          </div>
+        </div>
+      </div>
+      <!-- Only for xs devices -->
+      <div class="container d-block d-sm-none">
+        <div class="pt-5 row personal-contact">
+          <div class="col">
+            <h5><a href="tel:+919032996624">
+                <span class="icon-box">
+                  <i class="fas fa-phone fa-flip-horizontal"></i>
+                </span>
+              </a></h5>
+          </div>
+          <div class="col"></div>
+          <div class="col">
+            <h5><a href="mailto:manichandu.m@icloud.com" target="_top">
+                <span class="icon-box">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </a></h5>
           </div>
         </div>
       </div>
       <div class="container sticky-bottom d-none d-sm-block">
-        <div class="row">
+        <div class="row social-contact">
           <div class="col-sm text-left">
-            <i class="fab fa-linkedin-in"></i>&nbsp;&#x2F;&nbsp;ManiChandu
+            <h5><a href="https://www.linkedin.com/in/ManiChandu/">
+                <i class="fab fa-linkedin-in"></i>&nbsp;&#x2F;&nbsp;ManiChandu
+              </a></h5>
           </div>
           <div class="col-sm">
-            <i class="fab fa-github-alt"></i>&nbsp;&#x2F;&nbsp;ManiChanduM
+            <h5><a href="https://github.com/ManiChanduM">
+                <i class="fab fa-github"></i>&nbsp;&#x2F;&nbsp;ManiChanduM
+              </a></h5>
           </div>
           <div class="col-sm text-right">
-            <i class="fab fa-facebook-f"></i>&nbsp;&#x2F;&nbsp;ManiChandu.M
+            <h5><a href="https://www.facebook.com/ManiChandu.M">
+                <i class="fab fa-facebook-f"></i>&nbsp;&#x2F;&nbsp;ManiChandu.M
+              </a></h5>
+          </div>
+        </div>
+      </div>
+      <!-- Only for xs devices -->
+      <div class="container sticky-bottom d-block d-sm-none">
+        <div class="row social-contact">
+          <div class="col">
+            <h5><a href="https://www.facebook.com/ManiChandu.M">
+                <i class="fab fa-facebook-f"></i>
+              </a></h5>
+          </div>
+          <div class="col">
+            <h5><a href="https://github.com/ManiChanduM">
+                <i class="fab fa-github"></i>
+              </a></h5>
+          </div>
+          <div class="col">
+            <h5><a href="https://www.linkedin.com/in/ManiChandu/">
+                <i class="fab fa-linkedin-in"></i>
+              </a></h5>
           </div>
         </div>
       </div>
