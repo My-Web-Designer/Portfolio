@@ -1,3 +1,25 @@
+// Navbar active class
+var navContainer = document.getElementById("navbarToggler");
+var items = navContainer.getElementsByClassName("nav-item");
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+// Navbar close on select of nav item
+$(function () {
+  var navMain = $(".navbar-collapse");
+  // "a:not([data-toggle])" - to avoid issues caused
+  // when you have dropdown inside navbar
+  navMain.on("click", "a:not([data-toggle])", null, function () {
+    navMain.collapse('hide');
+  });
+});
+
+
 // Display Article Modal
 $('#article_modal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal

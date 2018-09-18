@@ -34,6 +34,51 @@ html {
   z-index: 1020;
 }
 
+/*START: CSS for Hamburger Icon*/
+
+.navbar-toggler {
+  padding: .55rem .65rem;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: #999;
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+  margin-top: 6px;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -7px);
+  transition: ease all .2s;
+}
+
+/*END: CSS for Hamburger Icon*/
+
 /* Home */
 
 .home {
@@ -208,13 +253,15 @@ html {
   background-color: #efcb68;
 }
 
-.attachment-count{
+.attachment-count {
   font-size: .9em;
 }
-.attachment-count img{
+
+.attachment-count img {
   width: 16px;
   vertical-align: sub;
 }
+
 /* Articles */
 
 .articles {
@@ -360,10 +407,11 @@ a.btn:hover {
 .pswp__button--arrow--left:before {
   border-radius: 0 5px 5px 0;
   background-position: -134px -37px;
-  left:0px;
+  left: 0px;
 }
+
 .pswp__button--arrow--right:before {
   border-radius: 5px 0 0 5px;
   background-position: -90px -37px;
-  right:0px;
+  right: 0px;
 }
