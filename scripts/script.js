@@ -19,6 +19,17 @@ $(function () {
   });
 });
 
+// Circular Counter
+$(document).ready(function () {
+  $(".circularProgress").each(function () {
+    var dataProgress = $(this).attr("stroke-dashoffset");
+    $(this).attr("stroke-dashoffset", "251.2");
+    $(this).animate({
+      "stroke-dashoffset": dataProgress
+    }, 1500)
+  });
+
+});
 
 // Display Article Modal
 $('#article_modal').on('show.bs.modal', function (event) {
@@ -67,6 +78,7 @@ $('.picture').each(function () {
       clickToCloseNonZoomable: false,
       closeElClasses: [],
     }
+
     // Initialize PhotoSwipe
     var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
     lightBox.init();

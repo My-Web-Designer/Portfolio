@@ -6,26 +6,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
+  <meta name="theme-color" content="#111">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
 
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- PhotoSwipe Main CSS -->
   <link rel="stylesheet" href="styles/photoswipe.css">
 
-  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
-     In the folder of skin CSS file there are also:
-     - .png and .svg icons sprite,
-     - preloader.gif (for browsers that do not support CSS animations) -->
+  <!-- PhotoSwipe Default UI CSS -->
   <link rel="stylesheet" href="assets/default-skin/default-skin.css">
-
-  <!-- Global CSS  -->
-  <link rel="stylesheet" href="styles/styles.css">
 
   <title>Portfolio</title>
 
-  <!-- Fontawesome icons -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/solid.css" integrity="sha384-S2gVFTIn1tJ/Plf+40+RRAxBCiBU5oAMFUJxTXT3vOlxtXm7MGjVj62mDpbujs4C"
@@ -35,13 +33,12 @@
 </head>
 
 <body>
-  <!-- Navigation bar -->
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-wrapper navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">Portfolio</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggler"
         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
@@ -294,18 +291,21 @@
             </b>
             <b class="float-right">2012 - 2016.</b>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt vulputate erat vel ornare.
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt vulputate erat vel
+            ornare.
             Pellentesque diam tellus, ultrices sagittis velit id, tristique molestie diam. Duis tempor ac velit sed
             ullamcorper. Duis in dui sodales, vestibulum eros eget, lacinia est. Aliquam sollicitudin non ipsum at
             rhoncus. In semper leo posuere commodo pharetra. Fusce elementum ligula eu feugiat vulputate. Nunc quis
-            vestibulum elit. Phasellus nunc justo, dictum vel imperdiet in, ultricies in leo. Duis arcu erat, ultricies
+            vestibulum elit. Phasellus nunc justo, dictum vel imperdiet in, ultricies in leo. Duis arcu erat,
+            ultricies
             ut turpis vel, dapibus ultrices massa. Vestibulum blandit diam vel nisi porttitor, in sagittis eros
             aliquet.
             Nunc rhoncus augue quis varius eleifend.
           </p>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sunt inventore ea suscipit, tempora
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sunt inventore ea suscipit,
+              tempora
               dolore repellat aliquam accusamus rerum at aperiam, itaque accusantium earum voluptatum modi optio? Ut,
               consectetur provident!
             </li>
@@ -329,18 +329,21 @@
             </b>
             <b class="float-right">2012 - 2016.</b>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt vulputate erat vel ornare.
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt vulputate erat vel
+            ornare.
             Pellentesque diam tellus, ultrices sagittis velit id, tristique molestie diam. Duis tempor ac velit sed
             ullamcorper. Duis in dui sodales, vestibulum eros eget, lacinia est. Aliquam sollicitudin non ipsum at
             rhoncus. In semper leo posuere commodo pharetra. Fusce elementum ligula eu feugiat vulputate. Nunc quis
-            vestibulum elit. Phasellus nunc justo, dictum vel imperdiet in, ultricies in leo. Duis arcu erat, ultricies
+            vestibulum elit. Phasellus nunc justo, dictum vel imperdiet in, ultricies in leo. Duis arcu erat,
+            ultricies
             ut turpis vel, dapibus ultrices massa. Vestibulum blandit diam vel nisi porttitor, in sagittis eros
             aliquet.
             Nunc rhoncus augue quis varius eleifend.
           </p>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sunt inventore ea suscipit, tempora
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sunt inventore ea suscipit,
+              tempora
               dolore repellat aliquam accusamus rerum at aperiam, itaque accusantium earum voluptatum modi optio? Ut,
               consectetur provident!
             </li>
@@ -364,9 +367,60 @@
         <h2>Education</h2>
         <div class="container-fluid text-center">
           <div class="row">
-            <div class="col-4">Bachelor of Technolgy</div>
-            <div class="col-4">Higher Secondary Education</div>
-            <div class="col-4">Senior Secondary Education</div>
+            <div class="col-md-4">
+              <!-- Circular chart -->
+              <svg width="270px" height="270px" viewbox="0 0 100 100">
+                <!-- Progress -->
+                <!-- 100% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#d3d4d9"
+                  stroke-dasharray="251.2" stroke-dashoffset="0" />
+                <!-- 80% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#068d9d"
+                  stroke-dasharray="251.2" stroke-dashoffset="62.8" />
+                <!-- Center Text -->
+                <text x="40" y="55" fill="black" font-size="12">75%</text>
+              </svg>
+              <br>Bachelor of Technolgy
+              <br>Information Technology
+              <br>2012 - 2016
+              <br>GITAM University
+            </div>
+            <div class="col-md-4">
+              <!-- Circular chart -->
+              <svg width="270px" height="270px" viewbox="0 0 100 100">
+                <!-- Progress -->
+                <!-- 100% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#d3d4d9"
+                  stroke-dasharray="251.2" stroke-dashoffset="0" />
+                <!-- 80% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#068d9d"
+                  stroke-dasharray="251.2" stroke-dashoffset="62.8" />
+                <!-- Center Text -->
+                <text x="40" y="55" fill="black" font-size="12">75%</text>
+              </svg>
+              <br>Intermediate
+              <br>Math, Physics & Chemistry
+              <br>2010 - 2012
+              <br>Narayana
+            </div>
+            <div class="col-md-4">
+              <!-- Circular chart -->
+              <svg width="270px" height="270px" viewbox="0 0 100 100">
+                <!-- Progress -->
+                <!-- 100% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#d3d4d9"
+                  stroke-dasharray="251.2" stroke-dashoffset="0" />
+                <!-- 80% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7" stroke="#068d9d"
+                  stroke-dasharray="251.2" stroke-dashoffset="62.8" />
+                <!-- Center Text -->
+                <text x="40" y="55" fill="black" font-size="12">75%</text>
+              </svg>
+              <br>SSC
+              <br>State Board
+              <br>2010
+              <br>SFS School
+            </div>
           </div>
         </div>
       </div>
@@ -715,19 +769,19 @@
       <div class="container sticky-bottom d-block d-sm-none">
         <div class="row social-contact">
           <div class="col">
-            <h5><a href="https://www.facebook.com/ManiChandu.M">
-                <i class="fab fa-facebook-f"></i>
-              </a></h5>
+            <a href="https://www.facebook.com/ManiChandu.M">
+              <i class="fab fa-facebook-f"></i>
+            </a>
           </div>
           <div class="col">
-            <h5><a href="https://github.com/ManiChanduM">
-                <i class="fab fa-github"></i>
-              </a></h5>
+            <a href="https://github.com/ManiChanduM">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
           <div class="col">
-            <h5><a href="https://www.linkedin.com/in/ManiChandu/">
-                <i class="fab fa-linkedin-in"></i>
-              </a></h5>
+            <a href="https://www.linkedin.com/in/ManiChandu/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -741,14 +795,14 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title"></h4>
+          <h4 class="modal-title">Modal Title</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
           <div class="article-cover">
-            <img src="" alt="articles image" class="landscape">
+            <img src="#" alt="articles image" class="landscape">
             <div class="restrict-img"></div>
           </div>
           <p class="article-description"></p>
@@ -804,19 +858,21 @@
   </div>
 
   <!-- jQuery, Popper.js and Bootstrap JS-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-    crossorigin="anonymous "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
-    crossorigin="anonymous "></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
-    crossorigin="anonymous "></script>
-  <!-- Core JS file -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+
+  <!-- PhotoSwipe JS -->
   <script src="scripts/photoswipe.js"></script>
 
-  <!-- UI JS file -->
+  <!-- PhotoSwipe Default UI JS -->
   <script src="scripts/photoswipe-ui-default.js"></script>
-  <!-- Script.js -->
-  <script src="scripts/script.js "></script>
+
+  <!-- Script JS -->
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
