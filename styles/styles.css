@@ -114,25 +114,22 @@ html {
 }
 
 .icon-box {
- 
   border-radius: 50%;
   width: 2.25rem;
   height: 2.25rem;
   display: inline-block;
   text-align: center;
-  
   margin-right: .5em;
   line-height: 1.5em;
   transition: all 0.2s ease-in;
-  color:rgba(0, 4, 15, 0.8);
-  background-color:#f7d781;
+  color: rgba(0, 4, 15, 0.8);
+  background-color: #f7d781;
 }
 
 .personal-contact a:hover .icon-box {
   color: #e0b84a;
   background: #fff;
 }
-
 
 .icon-box i {
   vertical-align: middle;
