@@ -87,8 +87,29 @@ $('.picture').each(function () {
   });
 });
 
+// For the article section of the image
+
 if ($(window).width() > 768) {
   $('.articleImg').addClass('landscape');
 } else {
   $('.articleImg').removeClass('landscape');
 }
+
+// Truncating and adding ellipses for the article details
+
+var truncate = function (elem, limit) {
+  var string = elem.textContent.trim();
+  if (string.length > limit)
+    string = string.substring(0, limit) + '...';
+  else
+    return string;
+  elem.textContent = string;
+};
+var articleTitle = $(".article-title");
+articleTitle.each(function () {
+  truncate(this, 22);
+});
+var articleInset = $(".article-inset");
+articleInset.each(function () {
+  truncate(this, 95);
+});
