@@ -86,3 +86,9 @@ $('.picture').each(function () {
     lightBox.options.closeOnScroll = false;
   });
 });
+
+if ($(window).width() > 768) {
+  $('.articleImg').addClass('landscape');
+} else {
+  $('.articleImg').removeClass('landscape');
+}

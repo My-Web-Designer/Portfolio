@@ -18,6 +18,10 @@ html {
   height: 100%;
 }
 
+.sm-float-right-none {
+  float: right;
+}
+
 /* scrollbar */
 
 ::-webkit-scrollbar {
@@ -208,31 +212,31 @@ html {
 
 /* For Employment Section */
 
-.StepProgress {
+.stepProgress {
   position: relative;
 }
 
-.StepProgress-item {
+.stepProgress-item {
   position: relative;
   counter-increment: list;
-  padding-left: 55px;
+  padding-left: 40px;
   padding-top: 10px;
   list-style: none;
 }
 
-.StepProgress-item {
+.stepProgress-item {
   padding-bottom: 30px;
 }
 
-.StepProgress-item:last-child {
+.stepProgress-item:last-child {
   padding-bottom: 0px;
 }
 
-.StepProgress-item:nth-last-child(2) {
+.stepProgress-item:nth-last-child(2) {
   padding-bottom: 15px;
 }
 
-.StepProgress-item::before {
+.stepProgress-item::before {
   display: inline-block;
   content: "";
   position: absolute;
@@ -242,7 +246,7 @@ html {
   border-left: 2px solid #6d6f7d;
 }
 
-.StepProgress-item::after {
+.stepProgress-item::after {
   content: url(../assets/images/employment.png);
   display: inline-block;
   position: absolute;
@@ -253,11 +257,11 @@ html {
   border: 2px solid #6d6f7d;
   border-radius: 50%;
   background-color: #6d6f7d;
-  padding-top: 8px;
+  padding-top: 10px;
   text-align: center;
 }
 
-.StepProgress-item.last::after {
+.stepProgress-item.last::after {
   width: 14px;
   height: 14px;
   top: -3px;
@@ -266,7 +270,7 @@ html {
   content: "";
 }
 
-.StepProgress-item.last::before {
+.stepProgress-item.last::before {
   display: inline-block;
   content: "";
   position: absolute;
@@ -301,10 +305,12 @@ ul.employment_highlights li:before {
 }
 
 /* Skill sets */
-.rounded-wrapper{
+
+.rounded-wrapper {
   display: table;
   margin: 0 auto;
 }
+
 .rounded-img {
   border-radius: 50%;
   border: 1px dashed #17a2b8;
@@ -315,11 +321,12 @@ ul.employment_highlights li:before {
   display: table-cell;
   vertical-align: middle;
 }
-.rounded-img img{
+
+.rounded-img img {
   width: 95%;
 }
 
-.rounded-img img.custom_height{
+.rounded-img img.custom_height {
   width: 75%;
 }
 
@@ -377,7 +384,8 @@ ul.employment_highlights li:before {
   background: #fcf7ff;
   border: 1px solid #d3d4d9;
   padding: 1em;
-  height: 160px;
+  height: auto;
+  min-height: 160px;
   margin: 0 auto;
   position: relative;
   top: -5em;
@@ -459,7 +467,7 @@ ul.employment_highlights li:before {
 .article-title {
   position: absolute;
   z-index: 99;
-  height: 60px;
+  max-height: 95px;
   background: #000411;
   width: 100%;
   opacity: .8;
@@ -601,11 +609,46 @@ a.btn:hover {
   right: 0px;
 }
 
-/* media queries */
+/* media queries for mobile devices */
 
-@media (min-width: 320px) and (max-width: 480px) {  
+@media (min-width: 320px) and (max-width: 480px) {
   .rounded-img {
-    width:60px;
+    width: 60px;
     height: 60px;
-  } 
+  }
+  .sm-float-right-none {
+    float: none;
+  }
+  .stepProgress-item::before {
+    left: -18px;
+  }
+  .stepProgress-item::after {
+    content: url(../assets/images/employment_s.png);
+    width: 40px;
+    height: 40px;
+    padding-top: 7px;
+  }
+  .stepProgress-item {
+    padding-left: 5px;
+    padding-top: 0;
+  }
+  .stepProgress-item.last::after {
+    left: -24px;
+  }
+  ul.employment_highlights li {
+    padding-left: 1.5em;
+  }
+  ul.employment_highlights li:before {
+    top: .4em;
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 768px) {
+  .read-button {
+    position: initial;
+    bottom: 0;
+    right: 0;
+    transform: translate(0%, 0%);
+  }
 }
