@@ -166,7 +166,7 @@ html {
 }
 
 .progress-bar {
-  background-color: #17a2b8;
+  background-color: #068d9d;
   width: 0;
   animation: progress 1.5s ease-in-out forwards;
   position: relative;
