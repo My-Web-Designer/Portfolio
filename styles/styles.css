@@ -755,7 +755,7 @@ a.btn:hover {
     bottom: -5px;
   }
   .icon-box {
-  padding-top:1px
+    padding-top: 1px
   }
 }
 
@@ -765,6 +765,16 @@ a.btn:hover {
     bottom: 0;
     right: 0;
     transform: translate(0%, 0%);
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) {
+  .personal-contact h5 {
+    font-size: 1rem;
+  }
+  .personal-contact .col-sm-3,
+  .col-sm-6 {
+    padding: 0;
   }
 }
 
