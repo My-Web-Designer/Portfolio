@@ -754,6 +754,9 @@ a.btn:hover {
   .svg_divider {
     bottom: -5px;
   }
+  .icon-box {
+  padding-top:2px
+  }
 }
 
 @media (max-width: 768px) {
