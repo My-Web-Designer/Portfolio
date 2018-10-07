@@ -1,13 +1,32 @@
-// Navbar active class
-var navContainer = document.getElementById("navbarToggler");
-var items = navContainer.getElementsByClassName("nav-item");
-for (var i = 0; i < items.length; i++) {
-  items[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+$(document).ready(function () {
+  // Add scrollspy to <body>
+  $('body').scrollspy({ target: ".navbar", offset: 50 });
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#navbarToggler a").on('click', function (event) {
+    // Make sure this.hash has a value before overriding default behavior
+    var t = $(this).attr("href");
+    $('.active').removeClass('active');
+    $("html, body").animate({
+      scrollTop: $(t).offset().top - 50
+    }, {
+        duration: 700,
+      });
   });
-}
+
+  $('body').scrollspy({ target: '.navbar', offset: 60 });
+
+  // Circular Counter
+
+  $(".circularProgress").each(function () {
+    var dataProgress = $(this).attr("stroke-dashoffset");
+    $(this).attr("stroke-dashoffset", "251.2");
+    $(this).animate({
+      "stroke-dashoffset": dataProgress
+    }, 1500)
+  });
+
+});
 
 // Navbar close on select of nav item
 $(function () {
@@ -17,18 +36,6 @@ $(function () {
   navMain.on("click", "a:not([data-toggle])", null, function () {
     navMain.collapse('hide');
   });
-});
-
-// Circular Counter
-$(document).ready(function () {
-  $(".circularProgress").each(function () {
-    var dataProgress = $(this).attr("stroke-dashoffset");
-    $(this).attr("stroke-dashoffset", "251.2");
-    $(this).animate({
-      "stroke-dashoffset": dataProgress
-    }, 1500)
-  });
-
 });
 
 // Display Article Modal
