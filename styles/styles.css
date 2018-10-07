@@ -255,7 +255,7 @@ a:active {
   display: inline-block;
   text-align: center;
   margin-right: .5em;
-  line-height: 1.5em;
+  line-height: 30px;
   transition: all 0.2s ease-in;
   color: rgba(0, 4, 17, 0.95);
   background-color: #efcb68;
