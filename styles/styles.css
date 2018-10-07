@@ -250,8 +250,8 @@ a:active {
 
 .icon-box {
   border-radius: 50%;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 36px;
+  height: 36px;
   display: inline-block;
   text-align: center;
   margin-right: .5em;
