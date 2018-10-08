@@ -12,8 +12,11 @@ $(document).ready(function () {
     }, {
         duration: 700,
       });
-    // $('body').scrollspy({ target: '.navbar', offset: $(t).offset().top });
+
     $(this).addClass('active');
+
+    // Navbar close on select of nav item
+    $(".navbar-collapse").collapse('hide');
     return false;
   });
 
@@ -34,16 +37,6 @@ $(document).ready(function () {
 
 // Add scrollspy to <body>
 $('body').scrollspy({ target: ".navbar", offset: 50 });
-
-// Navbar close on select of nav item
-$(function () {
-  var navMain = $(".navbar-collapse");
-  // "a:not([data-toggle])" - to avoid issues caused
-  // when you have dropdown inside navbar
-  navMain.on("click", "a:not([data-toggle])", null, function () {
-    navMain.collapse('hide');
-  });
-});
 
 // Display Article Modal
 $('#article_modal').on('show.bs.modal', function (event) {
