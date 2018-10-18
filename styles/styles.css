@@ -230,11 +230,11 @@ a:active {
 /* Home */
 
 .home {
-  background-attachment: fixed;
   background-image: url(../assets/images/hero.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   color: #fcf7ff;
   text-align: center;
   position: relative;
