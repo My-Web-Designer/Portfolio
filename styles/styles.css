@@ -757,6 +757,9 @@ a.btn:hover {
   .icon-box {
     padding-top: 1px
   }
+  .home, .contact{
+    background-attachment: scroll;
+  }
 }
 
 @media (max-width: 768px) {
