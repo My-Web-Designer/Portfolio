@@ -301,6 +301,7 @@ a:active {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -721,43 +722,55 @@ a.btn:hover {
     width: 60px;
     height: 60px;
   }
+
   .sm-float-right-none {
     float: none;
   }
+
   .stepProgress-item::before {
     left: -18px;
   }
+
   .stepProgress-item::after {
     content: url(../assets/images/employment_s.png);
     width: 40px;
     height: 40px;
     padding-top: 7px;
   }
+
   .stepProgress-item {
     padding-left: 5px;
     padding-top: 0;
   }
+
   .stepProgress-item.last::after {
     left: -24px;
   }
+
   ul.employment_highlights li {
     padding-left: 1.5em;
   }
+
   ul.employment_highlights li:before {
     top: .4em;
     font-size: .7em;
   }
+
   .profile,
   .portfolio {
     padding-bottom: 0px;
   }
+
   .svg_divider {
     bottom: -5px;
   }
+
   .icon-box {
     padding-top: 1px
   }
-  .home, .contact{
+
+  .home,
+  .contact {
     background-attachment: scroll;
   }
 }
@@ -775,6 +788,7 @@ a.btn:hover {
   .personal-contact h5 {
     font-size: 1rem;
   }
+
   .personal-contact .col-sm-3,
   .col-sm-6 {
     padding: 0;
