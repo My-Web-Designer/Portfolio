@@ -123,7 +123,7 @@ articleInset.each(function () {
 
 // Animation for Home
 
-particlesJS('homePageAnimation',
+/* particlesJS('homePageAnimation',
 
   {
     "particles": {
@@ -347,6 +347,6 @@ particlesJS("contactPageAnimation", {
     }
   },
   "retina_detect": true
-});
+}); */
 
 
