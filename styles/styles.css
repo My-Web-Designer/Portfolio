@@ -227,7 +227,7 @@ a:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: #fafafa;
   text-align: center;
   position: relative;
@@ -579,6 +579,10 @@ ul.employment_highlights li:before {
   height: 18px;
 }
 
+.btn-min-width {
+  min-width: 102.75px;
+}
+
 /* Articles */
 
 .articles {
@@ -626,7 +630,7 @@ button.close {
 /* Contact */
 
 .contact {
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-image: url(../assets/images/contact_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -730,7 +734,7 @@ button.close {
 
 /* Photoswipe */
 
-a.btn:hover {
+/* a.btn:hover {
   color: #fafafa;
 }
 
@@ -750,7 +754,7 @@ a.btn:hover {
   border-radius: 5px 0 0 5px;
   background-position: -90px -37px;
   right: 0px;
-}
+} */
 
 /* media queries for mobile devices */
 
